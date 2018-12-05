@@ -9,21 +9,21 @@ os.chdir(os.path.normpath(os.path.join(os.path.abspath(__file__), os.pardir)))
 
 setup(
     name='django-inspectdb-refactor',
-    version='0.2',
+    version='0.3',
     packages=find_packages(),
     include_package_data=True,
     license='BSD License',  # example license
     description='A simple Django app to create refactor output of inspectdb command into separate classes.',
     long_description=README,
-    url='https://github.com/farhan0581/django-inspectdb-refactor',
-    author='Farhan Khan',
-    author_email='farhan0581@gmail.com',
+    url='https://github.com/croudwis/django-inspectdb-refactor',
+    author='Daniel',
+    author_email='dpevni@gmail.com',
     install_requires=[
         'django>=1.9',
     ],
     classifiers=[
         'Framework :: Django',
-        'Framework :: Django :: 1.11',  # replace "X.Y" as appropriate
+        'Framework :: Django :: 2.1',  # replace "X.Y" as appropriate
         'Intended Audience :: Developers',
         'License :: OSI Approved :: BSD License',  # example license
         'Operating System :: OS Independent',

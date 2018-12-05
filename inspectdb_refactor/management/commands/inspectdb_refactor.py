@@ -262,7 +262,7 @@ class Command(InspectbCommand):
                     if comment_notes:
                         field_desc += '  # ' + ' '.join(comment_notes)
                     file_code +=  '    %s\n' % field_desc
-                for meta_line in self.get_meta(table_name, constraints, column_to_field_name):
+                for meta_line in self.get_meta(table_name, constraints, column_to_field_name, False):
                     file_code +=  "%s\n" % (meta_line)
                     
                 handle.write(file_code)
